@@ -1,0 +1,146 @@
+/* Hop hop c'est parti */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+/* Configuration de la grille principale */
+main.moi {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Mise en page de base basée */
+header, aside, footer, .presentation {
+    display: grid;
+    gap: 10px;
+}
+
+/* Styles des sections principales */
+header {
+    grid-template-columns: 1fr;
+    background: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+header .contactme {
+    list-style-type: none;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Image de profil */
+aside img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Compétences, Langues, et Centres d'intérêts */
+aside article, .hobbys {
+    text-align: center;
+}
+
+/* Contenu principal */
+.presentation article {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+/* Styles pour les diplômes et expériences */
+.experience, .exp {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.periode {
+    font-weight: bold;
+}
+
+.desc {
+    text-align: left;
+    max-width: 70%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Lien GitHub */
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+/* Responsivité pour les tablettes */
+@media (min-width: 768px) {
+    main.moi {
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+
+    .presentation {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        grid-row: 1;
+    }
+}
+
+/* Responsivité pour les grands écrans */
+@media (min-width: 1024px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .presentation {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+}
+
+/* Adaptation pour montres connectées */
+@media (max-width: 280px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    aside img {
+        width: 50px;
+        height: 50px;
+    }
+}
