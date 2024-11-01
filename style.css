@@ -12,14 +12,17 @@ body {
     line-height: 1.6;
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: grid;
 }
 
 /* Configuration de la grille principale */
 main.moi {
     display: grid;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding: 120px 220px 120px 350px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mise en page de base basée */
@@ -40,6 +43,10 @@ header .contactme {
     list-style-type: none;
 }
 
+footer{
+    list-style-type: none;
+}
+
 header h1 {
     font-size: 1.8em;
     color: #333;
@@ -48,8 +55,8 @@ header h1 {
 /* Image de profil */
 aside img {
     width: 100%;
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 250px;
+    border-radius: 20%;
     margin: 0 auto;
 }
 
@@ -64,13 +71,17 @@ aside article, .hobbys {
     border: 1px solid #ddd;
     background: #fafafa;
     border-radius: 5px;
+    text-align: center;
+    
 }
 
 /* Styles pour les diplômes et expériences */
 .experience, .exp {
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    align-items: center;
     padding: 5px;
+    gap: 20px;
 }
 
 .periode {
