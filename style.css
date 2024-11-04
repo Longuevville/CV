@@ -14,7 +14,23 @@ body {
     align-items: center;
     text-align: center;
     display: grid;
+    background-color: white;
+    
 }
+
+h1{
+    color: black;
+
+}
+
+h2{
+    color: black;
+}
+
+p{
+    color:black;
+}
+
 
 /* Configuration de la grille principale */
 main.moi {
@@ -104,7 +120,7 @@ footer {
 
 /* Lien GitHub */
 footer a {
-    color: #ffdd57;
+    color: #ebba71;
     text-decoration: none;
 }
 
